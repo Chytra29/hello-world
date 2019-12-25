@@ -1,11 +1,11 @@
 pipeline {
 agent any
 stages {
-stage('build') {
+stage ('building the application') {
 }
 
-stage('Welcome') {
-sh echo "Welcome to jenkins pipeline"
+stage ('Testing the application') {
+
 }
 
 }
