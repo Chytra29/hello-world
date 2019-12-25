@@ -9,8 +9,8 @@ pipeline{
        echo "Welcome to Jenkins peipeline"
         sh "hostname"
         sh "git --version"
-      echo "${maven}"
-        sh "${maven}/bin/mvn --version"
+        echo "${M2_HOME}"
+        sh "mvn --version"
              }
          }
         }
