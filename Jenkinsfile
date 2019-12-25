@@ -5,6 +5,7 @@ pipeline {
      steps { 
        echo "Welcome to Jenkins peipeline"
         sh "hostname"
+        sh "uptime"
            }
          }
         }
