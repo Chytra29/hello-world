@@ -1,16 +1,13 @@
 pipeline{
  agent any
- stages{
-   stage('building the application') {
-    tools {
+ tools {
         maven 'maven3'
     }
+ stages{
+   stage('building the application') {
+    
      steps{ 
-       echo "Welcome to Jenkins peipeline"
-        sh "hostname"
-        sh "git --version"
-        echo "${M2_HOME}"
-        sh "mvn --version"
+      sh "mvn clean install"
              }
          }
         }
